@@ -25,7 +25,7 @@ h3.ptitle {
 
 ul {
     display: flex;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-top: 85px;
 }
 
@@ -82,7 +82,7 @@ p.title-des{
 /* main-team img */
 .main{
     display: flex;
-    padding: 150px;
+    padding: 100px 150px 10px 150px;
 }
 .container{
     display: grid;
@@ -121,6 +121,7 @@ p.info{
     line-height: 25px;
     padding: 5px;
     font-weight: 200px;
+    color: rgba(0, 0, 0, 0.63);
 }
 button.btn{
     width: 160px;
@@ -132,4 +133,113 @@ button.btn{
     color: aliceblue;
     font-weight: 600;
     font-size: 20px;
+}
+
+/* features section */
+
+.main-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+    padding: 20px 200px 20px 200px;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
+h2.m2title{
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.781);
+}
+p.m2des{
+    font-size: 14px;
+    color: #727272;
+}
+.features{
+    padding: 30px 50px 50px;
+}
+.feature{
+    width: 340px;
+    height: 150px;
+    
+    border-radius: 5px;
+    margin: 0px 30px 20px -45px;
+    box-shadow: 3px 3px 3px 2px #72727210;
+}
+h4.ftitle{
+    font-size: 16px;
+
+}
+p.fdes{
+    font-size: 12px;
+    padding: 5px;
+    color: #727272;
+}
+.sec2 img{
+    width: 600px;
+    height: 800px;
+    padding: 100px 0 0 50px;
+}
+.btn2 button{
+    width: 350px;
+    height: 180px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ff8f0eea;
+    border: 2px solid rgba(0, 0, 0, 0.021);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 30px;
+    margin: -50px 200px 0 400px;
+}
+span.btn{
+    font-size: 48px;
+}
+/* main Section 3 */
+.some-sec{
+    padding: 100px 200px 20px 200px; 
+}
+h2.some-title{
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.826);
+}
+p.some-des{
+    width: 500px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    padding: 10px;
+}
+
+/* icons */
+
+.main-3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1.5px solid #ff8f0eea;
+    border-radius: 5px;
+}
+.icon img{
+    width: 35px;
+    height: 35px;
+    padding: 15px 5px 0px 5px;
+}
+h4.number{
+    font-size: 40px;
+    margin-top: 0px;
+    color: #020202be;
+}
+p.info3{
+    margin-top: -20px;
+    font-size: 17px;
+    color: #727272;
 }
