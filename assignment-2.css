@@ -1,0 +1,135 @@
+/* header section */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    background: rgba(255, 144, 14, 0.1);
+    box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.315);
+}
+
+h3.ptitle {
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 84px;
+    margin-left: 189px;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.head {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    margin-left: 400px;
+    margin-top: 85px;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+/* ------
+--Head Description styles
+------ */
+h1.stitle {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+    padding: 50px 250px;
+    margin-top: -20px;
+    color: rgba(0, 0, 0, 0.803);
+}
+p.title-des{
+    color: #727272;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 190px 0 190px;
+    margin-top: -70px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.btn1{
+    padding: 50px ;
+}
+.btn1 button{
+    width: 180px;
+    height: 64px;
+    margin: 0 550px 0 500px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ff8f0eea;
+    border: 2px solid rgba(0, 0, 0, 0.021);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+}
+.banner img{
+    width: 75%;
+    height: 75%;
+    padding: 20px 200px 20px 160px;
+    overflow: hidden;
+}
+/* main-team img */
+.main{
+    display: flex;
+    padding: 150px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+.team img{
+    width: 250px;
+    height: 250px;
+}
+/* team description */
+.team-des{
+    padding: 20px 20px 0px 20px;
+    margin-top: 70px;
+}
+
+h3.team-title{
+    color: #727272;
+    font-weight: 700;
+    font-size: 40px;
+}
+span.h3-bold{
+    font-size: 45px;
+    color: black;
+}
+span.h3-color{
+    font-size: 45px;
+    color:  #ff8f0eea;
+}
+.team-info{
+    padding: 0px 0px 0px 20px;
+}
+p.info{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 5px;
+    font-weight: 200px;
+}
+button.btn{
+    width: 160px;
+    height: 54px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ff8f0eea;
+    border: 2px solid rgba(0, 0, 0, 0.021);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+}
