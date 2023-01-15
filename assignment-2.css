@@ -2,6 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
 
+/* Responsive for device's width under 576px */
+
+@media only screen and (max-width:576px){
+    h3.ptitle{
+        text-align: center;
+
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    ul{
+        flex-direction: column;
+    }
+    .banner img{
+        position: absolute;
+    }
+    
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -35,6 +54,15 @@ li {
     font-size: 18px;
     line-height: 26px;
     color: rgba(0, 0, 0, 0.795);
+}
+
+/* hover on menu */
+
+li:hover{
+    padding: 22px;
+    font-size: 22px;
+    transition: 0.2s ease-in-out;
+    color: rgb(245, 143, 11);
 }
 
 /* ------
@@ -72,6 +100,11 @@ p.title-des{
     color: aliceblue;
     font-weight: 600;
     font-size: 20px;
+}
+.btn1 button:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: 0.2s ease-in-out;
 }
 .banner img{
     width: 75%;
@@ -134,6 +167,11 @@ button.btn{
     font-weight: 600;
     font-size: 20px;
 }
+button.btn:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
 
 /* features section */
 
@@ -142,6 +180,7 @@ button.btn{
     grid-template-columns: repeat(2,1fr);
     row-gap: 20px;
     padding: 20px 200px 20px 200px;
+    position: relative;
 }
 .sec1{
     display: flex;
@@ -161,11 +200,12 @@ p.m2des{
 .feature{
     width: 340px;
     height: 150px;
-    
     border-radius: 5px;
     margin: 0px 30px 20px -45px;
     box-shadow: 3px 3px 3px 2px #72727210;
+    
 }
+
 h4.ftitle{
     font-size: 16px;
 
@@ -178,7 +218,8 @@ p.fdes{
 .sec2 img{
     width: 600px;
     height: 800px;
-    padding: 100px 0 0 50px;
+    padding: 100px 30px 0 50px;
+   
 }
 .btn2 button{
     width: 350px;
@@ -191,14 +232,17 @@ p.fdes{
     font-weight: 600;
     font-size: 22px;
     padding: 30px;
-    margin: -50px 200px 0 400px;
+    z-index: 5;
+    margin: -300px 200px 100px 800px;
+    position: absolute;
 }
 span.btn{
     font-size: 48px;
 }
 /* main Section 3 */
 .some-sec{
-    padding: 100px 200px 20px 200px; 
+    padding: 0 px 200px 20px 400px; 
+    margin-left: 100px;
 }
 h2.some-title{
     font-size: 45px;
@@ -228,6 +272,10 @@ p.some-des{
     border: 1.5px solid #ff8f0eea;
     border-radius: 5px;
 }
+.icon:hover{
+    background-color: #ff8f0eab;
+    transition: 0.2s ease-in-out;
+}
 .icon img{
     width: 35px;
     height: 35px;
@@ -242,4 +290,72 @@ p.info3{
     margin-top: -20px;
     font-size: 17px;
     color: #727272;
+}
+
+/* footer */
+
+h2.h-sponsor{
+    text-align: center;
+    font-size: 50px;
+}
+p.spon-des{
+    color: #727272;
+    width: 600px;
+    margin-left: 400px;
+    text-align: center;
+}
+
+/* Sponsor logo styles */
+
+.sponsor-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+    margin-left: 80px;
+}
+.s-logo img{
+    width: 146px;
+    height: 40px;
+    filter: grayscale(100%);
+}
+.s-logo img:hover{
+    filter: brightness(110%);
+}
+.cc{
+    width: 1000px;
+    height: 60px;
+    background: rgba(255, 144, 14, 0.1);
+    margin: 100px 150px 200px 150px;
+    border-radius: 15px;
+}
+p.copyrights{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.extra{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px;
+    border-radius: 15px;
+    margin: 0 100px;
+}
+h2.hextra{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.836);
+
+}
+form{
+    padding: 30px;
+}
+form input{
+    width: 300px;
+    height:45px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    padding: 2px;
+}
+form input.sub{
+    background-color: #ff8f0eea;
+    height: 50px;
 }
